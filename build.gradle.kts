@@ -1,14 +1,14 @@
 plugins {
-	java
 	id("org.springframework.boot") version "3.1.11-SNAPSHOT"
 	id("io.spring.dependency-management") version "1.1.4"
+	id("java")
 }
 
 group = "com.example"
 version = "0.0.1-SNAPSHOT"
 
 java {
-	sourceCompatibility = JavaVersion.VERSION_17
+	sourceCompatibility = JavaVersion.VERSION_19
 }
 
 repositories {
@@ -23,7 +23,6 @@ dependencies {
 	implementation("org.projectlombok:lombok")
 	implementation("org.springframework.shell:spring-shell-starter")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	implementation("org.jline:jline-terminal:3.25.1")
 }
 
 dependencyManagement {

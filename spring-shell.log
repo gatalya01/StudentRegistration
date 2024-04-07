@@ -1,1 +1,13 @@
 1712069920490:addStudent John Doe 20
+1712506948885:Добавить студента John Doe 20
+1712507342938:getAllStudents
+1712507439817:addStudent John Doe 20
+1712508121821:removeStudent fb3c1e38-76b3-44fb-a2ac-7101d2f39d28
+1712508133925:addStudent John Doe 20
+1712508146995:showStudents
+1712511297572:clearStudents
+1712511704964:addStudent John Doe 20
+1712511723135:removeStudent 6ea4990b-7198-4233-8eee-2280aeb5c3e9
+1712511732223:showStudents
+1712511739286:clearStudents
+1712511744334:showStudents

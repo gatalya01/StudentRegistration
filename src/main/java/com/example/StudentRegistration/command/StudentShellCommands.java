@@ -17,23 +17,23 @@ public class StudentShellCommands {
         this.studentService = studentService;
     }
 
-    @ShellMethod("Добавить студента")
+    @ShellMethod(value = "Добавить студента. Пример использования: addStudent John Doe 20", key = {"addStudent"})
     public void addStudent(String firstName, String lastName, int age) {
         studentService.addStudent(firstName, lastName, age);
     }
 
-    @ShellMethod("Удалить студента по ID")
-    public void removeStudent(UUID id) {
-        studentService.removeStudent(id);
+    @ShellMethod(value = "Удалить студента по ID. Пример использования: removeStudent 123e4567-e89b-12d3-a456-556642440000", key = {"removeStudent"})
+    public void removeStudent(String id) {
+        studentService.removeStudent(UUID.fromString(id));
     }
 
-    @ShellMethod("Показать всех студентов")
+    @ShellMethod(value = "Показать всех студентов", key = {"showStudents"})
     public void showStudents() {
         List<Student> students = studentService.getAllStudents();
         students.forEach(System.out::println);
     }
 
-    @ShellMethod("Очистить список студентов")
+    @ShellMethod(value = "Очистить список студентов", key = {"clearStudents"})
     public void clearStudents() {
         studentService.clearStudents();
     }
